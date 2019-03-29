@@ -49,9 +49,9 @@ Server side
 
 *   Search City Page
 
-    ![App](./readmeImage/homePage1.png)
+    ![App](./readMeImage/homePage1.png)
 
-    ![App](./readmeImage/homePage2.png)
+    ![App](./readMeImage/homePage2.png)
 
-    ![App](./readmeImage/homePage3.png)
+    ![App](./readMeImage/homePage3.png)
 
