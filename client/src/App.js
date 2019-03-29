@@ -75,14 +75,14 @@ class App extends React.Component {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-6">
+            <div className="col-4">
               <Form
                 handleInputChange={this.handleInputChange}
                 handleFormSubmit={this.handleFormSubmit}
                 city={this.state.city}
               />
             </div>
-            <div className="col-6" id="mapContainer">
+            <div className="col-8" id="mapContainer">
               <GoogleMap />
             </div>
           </div>
