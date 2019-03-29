@@ -47,11 +47,15 @@ Server side
 ---
 #### Deployed App View
 
-*   Search City Page
+* Search city Page
 
-    ![App](./readMeImage/homePage1.png)
+     ![App](./readMeImage/homePage1.png)
 
-    ![App](./readMeImage/homePage2.png)
+* Enter a city name
 
-    ![App](./readMeImage/homePage3.png)
+    * ![App](./readMeImage/homePage2.png)
+
+* Display city on map
+
+    * ![App](./readMeImage/homePage3.png)
 
