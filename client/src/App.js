@@ -40,7 +40,6 @@ class App extends React.Component {
               cityLat: parseFloat(results[0].geometry.location.lat()),
               cityLng: parseFloat(results[0].geometry.location.lng())
             });
-            console.log(this.state.cityLat);
             this.initMapAfterMount();
           }
         }.bind(this)

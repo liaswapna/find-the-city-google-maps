@@ -5,6 +5,7 @@ import "./style.css";
  * Class GoogleMap
  */
 class GoogleMap extends React.Component {
+
   /**
    * lifecycle method
    */
@@ -26,6 +27,7 @@ class GoogleMap extends React.Component {
    * function to intialize map
    */
   initMap = () => {
+    
     // Create A Map
     let map = new window.google.maps.Map(document.getElementById("map"), {
       center: { lat: -34.397, lng: 150.644 },

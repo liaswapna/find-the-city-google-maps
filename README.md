@@ -2,11 +2,11 @@
 
 ### Overview
 ---
-React-based Google Maps app that allows the user to enter the city, search and display on google maps. Build with components, utilized React lifecycle methods to query and display city based on user searches. This app uses React, Node and Express
+A simple web application that displays the location of a city on a Map based on the user input. This is built on React components, and utilizes React lifecycle methods to query and display city based on user searches. This app uses React, Node, Express and the Google Place Library.
 
 ### Getting Started
 ---
-* Clone down repo ``` git@github.com:liaswapna/find-the-city-google-maps.git```.
+* Clone the repo ``` git@github.com:liaswapna/find-the-city-google-maps.git```.
 * Navigate to the repo ```cd find-the-city-google-maps```.
 * Run command ```npm install``` in Terminal or GitBash
 * Run command ```npm start``` to start ther server.
@@ -17,6 +17,7 @@ React-based Google Maps app that allows the user to enter the city, search and d
 * Bootstrap 
 * Express
 * NodeJS
+* Google Place
 
 ### Dependencies
 ---

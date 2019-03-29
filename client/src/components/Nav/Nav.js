@@ -8,7 +8,7 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="navDiv">
-        <h2>Find the city in Google Maps </h2>
+        <h2>Search for your city on the Map!</h2>
       </div>
     );
   }
