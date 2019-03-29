@@ -1,4 +1,4 @@
-# # :earth_asia: find-the-city-google-maps
+# :earth_asia: find-the-city-google-maps
 
 ### Overview
 ---
@@ -49,9 +49,9 @@ Server side
 
 *   Search City Page
 
-    ![App](./readmeImage/homepage1.png)
+    ![App](./readmeImage/homePage1.png)
 
-    ![App](./readmeImage/homepage2.png)
-    
-    ![App](./readmeImage/homepage3.png)
+    ![App](./readmeImage/homePage2.png)
+
+    ![App](./readmeImage/homePage3.png)
 
