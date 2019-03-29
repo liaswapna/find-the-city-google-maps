@@ -1,12 +1,10 @@
 import React from "react";
 import "./style.css";
 class Form extends React.Component {
-    // constructor(
-    //     // autocomplete the search input
-    //     new window.google.maps.places.Autocomplete(document.querySelector("#searchCity"));
-    // )
     
   render() {
+      
+    
       return (
       <div className="form-div">
         <div className="form-group">
@@ -20,6 +18,7 @@ class Form extends React.Component {
             value={this.props.city}
             placeholder="Enter Search term here"
             name="city"
+            
             onChange={this.props.handleInputChange}
             required
           />

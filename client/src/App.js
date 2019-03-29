@@ -5,13 +5,19 @@ import Form from "./components/Form/Form";
 import "./App.css";
 
 class App extends React.Component {
+
+  
   state = {
     city: "",
     cityLat: 0,
     cityLng: 0
   };
 
-  handleInputChange = event => {
+  /**
+ * function to handle the input change
+ * @param {*} event
+ */
+  handleInputChange = (event) => {
     const { name, value } = event.target;
     this.setState({
       [name]: value
@@ -33,8 +39,6 @@ class App extends React.Component {
       }.bind(this));
     }
 
-    // Clear the input field.
-    // $("#city").val("");
   };
 
   initMapAfterMount = () => {
@@ -44,8 +48,7 @@ class App extends React.Component {
       zoom: 8
     });
     this.addMarker(map);
-    // autocomplete the search input
-    new window.google.maps.places.Autocomplete(document.querySelector("#city"));
+    
   };
 
   addMarker = (map) => {
