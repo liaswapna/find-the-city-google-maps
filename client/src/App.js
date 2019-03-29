@@ -5,7 +5,66 @@ import Form from "./components/Form/Form";
 import "./App.css";
 
 class App extends React.Component {
+  state = {
+    city: "",
+    cityLat: 0,
+    cityLng: 0
+  };
+
+  handleInputChange = event => {
+    const { name, value } = event.target;
+    this.setState({
+      [name]: value
+    });
+  };
+
+  searchCity = event => {
+    if (this.state.city !== "") {
+      let geocoder = new window.google.maps.Geocoder();
+      geocoder.geocode({ address: this.state.city }, function(results, status) {
+        if (status === "OK") {
+          this.setState({
+            cityLat: parseFloat(results[0].geometry.location.lat()),
+            cityLng: parseFloat(results[0].geometry.location.lng())
+          });
+          console.log(this.state.cityLat)
+          this.initMapAfterMount();
+        }
+      }.bind(this));
+    }
+
+    // Clear the input field.
+    // $("#city").val("");
+  };
+
+  initMapAfterMount = () => {
+    // Create A Map
+    let map = new window.google.maps.Map(document.getElementById("map"), {
+      center: { lat: this.state.cityLat, lng: this.state.cityLng },
+      zoom: 8
+    });
+    this.addMarker(map);
+    // autocomplete the search input
+    new window.google.maps.places.Autocomplete(document.querySelector("#city"));
+  };
+
+  addMarker = (map) => {
+    let myLatLng = { lat: this.state.cityLat, lng: this.state.cityLng };
+    let marker = new window.google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      title: "Hello World!"
+    });
+  };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    this.searchCity();
+  };
+
   render() {
+
+  
     return (
       <div>
         <div className="container-fluid navContainer">
@@ -14,7 +73,11 @@ class App extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-6">
-              <Form />
+              <Form
+                handleInputChange={this.handleInputChange}
+                handleFormSubmit={this.handleFormSubmit}
+                city={this.state.city}
+              />
             </div>
             <div className="col-6" id="mapContainer">
               <GoogleMap />
@@ -24,6 +87,7 @@ class App extends React.Component {
       </div>
     );
   }
+  
 }
 
 export default App;
