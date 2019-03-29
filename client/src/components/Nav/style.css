@@ -1,0 +1,8 @@
+.navDiv{
+    height: 60px;
+    background-color: grey;
+  }
+.navDiv p{
+    padding-top:15px !important;
+    color: white;
+}

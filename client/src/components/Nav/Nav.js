@@ -1,12 +1,15 @@
 import React from "react";
-class Nav extends React.Component{
-    render(){
-        return(
-            <div>
-                <p>Find the city in Google Maps</p>
-            </div>
-        )
-    }
+import "./style.css";
+class Nav extends React.Component {
+  render() {
+    return (
+      <div className="navDiv">
+        <p>
+          <h2>Find the city in Google Maps </h2>
+        </p>
+      </div>
+    );
+  }
 }
 
 export default Nav;
