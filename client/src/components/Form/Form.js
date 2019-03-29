@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.css";
+
+/**
+ * Class Form
+ */
 class Form extends React.Component {
-    
   render() {
-      
-    
-      return (
+    return (
       <div className="form-div">
         <div className="form-group">
           <label htmlFor="Search City">
@@ -16,9 +17,8 @@ class Form extends React.Component {
             id="searchCity"
             type="text"
             value={this.props.city}
-            placeholder="Enter Search term here"
+            placeholder="Enter the city here"
             name="city"
-            
             onChange={this.props.handleInputChange}
             required
           />

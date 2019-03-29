@@ -1,8 +1,11 @@
+/* nav bar div */
 .navDiv {
   height: 60px;
   background-color: grey;
   margin-bottom: 40px;
 }
+
+/* nav bar heading */
 .navDiv h2 {
   padding-top: 15px !important;
   color: white;

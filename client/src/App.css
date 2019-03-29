@@ -1,8 +1,11 @@
+/* nav container */
 .navContainer{
   margin: 0px;
   padding: 0px;
   text-align: center;
 }
+
+/* map container */
 #mapContainer{
   height: 700px;
 }
